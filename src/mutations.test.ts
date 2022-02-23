@@ -9,6 +9,7 @@ test("should create new user ", async () => {
     acceptTermsAndConditions: true,
   };
 
+  // ts-ignore
   prismaMock.user.create.mockResolvedValue(user);
 
   await expect(createUser(user)).resolves.toEqual({
