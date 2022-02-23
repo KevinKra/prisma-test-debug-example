@@ -8,12 +8,13 @@ async function main() {
     data: {
       name: "Alice",
       email: "alice@prisma.io",
-      posts: {
-        create: { title: "Hello World" },
-      },
-      profile: {
-        create: { bio: "I like turtles" },
-      },
+      acceptTermsAndConditions: false,
+      //   posts: {
+      //     create: { title: "Hello World" },
+      //   },
+      //   profile: {
+      //     create: { bio: "I like turtles" },
+      //   },
     },
   });
 
